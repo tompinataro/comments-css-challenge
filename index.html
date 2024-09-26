@@ -1,108 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Comments</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="wrapper">
-      <article>
-        <h3>3 Comments</h3>
-        <section>
-          <div class="commentBox">
-            <div class="profile">
-              <span class="material-icons">
-              person
-              </span>
-              <div class="pt-10">
-                <p class="bold">Tom P.</p>
-                <p class="gray">Comment here</p>
-              </div>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Comments Section</title>
+</head>
+<body>
+    <div class="comments-section">
+        <div class="comment">
+            <img src="./images/avatars/image-amyrobson.png" alt="Amy Robson" class="avatar">
+            <div class="comment-content">
+                <div class="comment-header">
+                    <span class="username">Amy Robson</span>
+                    <span class="timestamp">1 month ago</span>
+                    <img src="./images/icon-edit.svg" alt="Edit" class="edit-icon">
+                </div>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="reply">
+                    <button class="reply-btn">Reply</button>
+                </div>
             </div>
-            <div class="comment">
-              <p>Comment here</p>
-            </div>
-          </div>
-          <div class="vote pt-10">
-			      <a title="Like" class="voteup">
-              <i class="material-icons">add_circle_outline</i>
-              <span>Like</span>
-            </a>
-            <a title="Dislike" class="votedown">
-			        <i class="material-icons">remove_circle_outline</i>
-              <span>Dislike</span>
-            </a>
-            <a title="Report This Comment" class="report">
-				      <i class="material-icons">error_outline</i>
-            </a>
-          </div>
-        </section>
-        <section>
-          <div class="commentBox">
-            <div class="profile">
-              <span class="material-icons">
-              person
-              </span>
-              <div class="pt-10">
-                <p class="bold">Joe M.</p>
-                <p class="gray">Comment here</p>
-              </div>
-            </div>
-            <div class="comment">
-              <p>Comment here</p>
-            </div>
-          </div>
-          <div class="vote pt-10">
-            <a title="Like" class="voteup">
-              <i class="material-icons">add_circle_outline</i>
-              <span>Like</span>
-            </a>
-            <a title="Dislike" class="votedown">
-			        <i class="material-icons">remove_circle_outline</i>
-              <span>Dislike</span>
-            </a>
-            <a title="Report This Comment" class="report">
-				      <i class="material-icons">error_outline</i>
-            </a>
-          </div>
-        </section>
-        <section>
-          <div class="commentBox">
-            <div class="profile">
-              <span class="material-icons">
-              person
-              </span>
-              <div class="pt-10">
-                <p class="bold">T. K.</p>
-                <p class="gray">Comment here</p>
-              </div>
-            </div>
-            <div class="comment">
-              <p>Comment here</p>
-              </div>
-          </div>
-          <div class="vote pt-10">
-            <a title="Like" class="voteup">
-              <i class="material-icons">add_circle_outline</i>
-              <span>Like</span>
-            </a>
-            <a title="Dislike" class="votedown">
-			        <i class="material-icons">remove_circle_outline</i>
-              <span>Dislike</span>
-            </a>
-            <a title="Report This Comment" class="report">
-				      <i class="material-icons">error_outline</i>
-            </a>
-          </div>
-        </section>
-      </article>
+        </div>
+        <!-- Repeat the comment block for more comments -->
     </div>
-    
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
